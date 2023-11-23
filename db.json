@@ -1,0 +1,162 @@
+{
+  "tasks": [
+    {
+      "id": "b757",
+      "title": "Wäsche waschen & bügeln",
+      "status": "done",
+      "updatedAt": 1740571407178
+    },
+    {
+      "id": "af64",
+      "title": "Pflanzen gießen",
+      "status": "todo",
+      "updatedAt": 1740571421580
+    },
+    {
+      "id": "4c94",
+      "title": "E-Mails beantworten",
+      "status": "inProgress",
+      "updatedAt": 1740578306918
+    },
+    {
+      "id": "3591",
+      "title": "10.000 Schritte laufen",
+      "status": "todo",
+      "updatedAt": 1740736156004
+    },
+    {
+      "id": "073e",
+      "title": "Gitarre üben",
+      "status": "todo",
+      "updatedAt": 1740667433296
+    },
+    {
+      "id": "d625",
+      "title": "Einkaufen gehen",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d64425",
+      "title": "Arzttermin vereinbaren",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d64545",
+      "title": "Projektbericht abschließen",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d64983",
+      "title": "Auto zur Inspektion bringen",
+      "status": "done",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d648393",
+      "title": "Geburtstagsgeschenk für Sascha besorge",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d737",
+      "title": "Wohnung putzen",
+      "status": "done",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d678",
+      "title": "Steuererklärung einreichen",
+      "status": "done",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d9744",
+      "title": "Neuen Laptop bestellen",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    }
+  ],
+  "tasksBackup": [
+    {
+      "id": "b757",
+      "title": "Wäsche waschen & bügeln",
+      "status": "done",
+      "updatedAt": 1740571407178
+    },
+    {
+      "id": "af64",
+      "title": "Pflanzen gießen",
+      "status": "todo",
+      "updatedAt": 1740571421580
+    },
+    {
+      "id": "4c94",
+      "title": "E-Mails beantworten",
+      "status": "inProgress",
+      "updatedAt": 1740578306918
+    },
+    {
+      "id": "3591",
+      "title": "10.000 Schritte laufen",
+      "status": "todo",
+      "updatedAt": 1740736156004
+    },
+    {
+      "id": "073e",
+      "title": "Gitarre üben",
+      "status": "todo",
+      "updatedAt": 1740667433296
+    },
+    {
+      "id": "d625",
+      "title": "Einkaufen gehen",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d64425",
+      "title": "Arzttermin vereinbaren",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d64545",
+      "title": "Projektbericht abschließen",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d64983",
+      "title": "Auto zur Inspektion bringen",
+      "status": "done",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d648393",
+      "title": "Geburtstagsgeschenk für Sascha besorge",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d737",
+      "title": "Wohnung putzen",
+      "status": "done",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d678",
+      "title": "Steuererklärung einreichen",
+      "status": "done",
+      "updatedAt": 1740600209224
+    },
+    {
+      "id": "3d9744",
+      "title": "Neuen Laptop bestellen",
+      "status": "inProgress",
+      "updatedAt": 1740600209224
+    }
+  ]
+}

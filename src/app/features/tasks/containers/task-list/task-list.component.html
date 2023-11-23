@@ -1,0 +1,28 @@
+@let vm = viewModel();
+
+<button
+  mat-stroked-button
+  matTooltip="Add task"
+  matTooltipClass="tooltip-uppercase"
+  color="primary"
+  class="add-task"
+  (click)="addTask()"
+>
+  <mat-icon>add</mat-icon>Add task
+</button>
+@defer (when vm.tasks; prefetch on idle) {
+  <app-task-list-drag-drop
+    [tasks]="vm.tasks"
+    [syncQueue]="vm.syncQueue"
+    (moveTask)="moveTask($event)"
+    (editTask)="editTask($event)"
+    (undoDeleteTask)="undoDeleteTask($event)"
+    (deleteTask)="deleteTask($event)"
+  />
+} @placeholder {
+  <div class="loading-indicator">
+    <mat-spinner data-test-id="loading-indicator" mode="indeterminate" />
+  </div>
+} @error {
+  <p>Failed to load tasks</p>
+}

@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Application update</h2>
+<mat-dialog-content>
+  <p>A new version of the application is available and ready for use. Click OK to update now.</p>
+  <p>
+    Version: <span class="task-title"> {{ appData.version }}</span>
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-stroked-button (click)="onNoClick()">No</button>
+  <button mat-flat-button color="primary" [mat-dialog-close]="appData" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>

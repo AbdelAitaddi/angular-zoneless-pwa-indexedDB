@@ -1,0 +1,38 @@
+.bar-item {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.title {
+  display: flex;
+  min-width: 112px;
+  font-weight: bold;
+  padding-bottom: 12px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 40px;
+  min-width: 36px;
+  border-radius: 2px;
+}
+
+.progress-bar-color {
+  background-color: cadetblue;
+}
+
+.todo {
+  background-color: #bfbebe;
+}
+
+.inProgress {
+  background-color: #3572b0;
+}
+
+.done {
+  background-color: #4caf50;
+}

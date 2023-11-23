@@ -1,0 +1,130 @@
+:host {
+  display: flex;
+  height: 100% !important;
+  overflow: auto;
+  margin-top: 12px;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px;
+  align-items: stretch;
+  padding: 0;
+}
+
+@media (max-width: 576px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+[cdkDrag] {
+  background-color: white;
+}
+
+.list {
+  border: solid 1px #ccc;
+  min-height: 60px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: block;
+  margin-top: 12px;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow:
+    0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box:last-child {
+  border: none;
+}
+
+.list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.heading {
+  padding: 1em 0;
+  font-weight: bolder;
+  background: #ffffff;
+  color: #000000;
+  border-bottom: 0.5em solid #ffffff;
+  text-align: center;
+  font-family: "Roboto Slab", sans-serif;
+  margin: 0;
+  border-radius: 4px;
+}
+
+.todo {
+  border: 0;
+  color: #fff;
+  background-color: #bfbebe;
+}
+
+.inProgress {
+  border: 0;
+  color: #fff;
+  background-color: #3572b0;
+}
+
+.done {
+  border: 0;
+  color: #fff;
+  background-color: #14892c;
+}
+
+.todo-container {
+  .cdk-drop-list-dragging {
+    border: 2px solid #bfbebe;
+  }
+}
+
+.inProgress-container {
+  .cdk-drop-list-dragging {
+    border: 2px solid #3572b0;
+  }
+}
+
+.done-container {
+  .cdk-drop-list-dragging {
+    border: 2px solid #14892c;
+  }
+}
+
+.delete:hover {
+  color: red;
+}
+
+.sync-delete {
+  cursor: no-drop;
+  background-color: #d32f2f;
+}
+
+.tooltip-uppercase {
+  text-transform: uppercase;
+}

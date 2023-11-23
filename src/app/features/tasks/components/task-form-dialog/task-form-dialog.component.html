@@ -1,0 +1,29 @@
+<h2>{{ isTask(task) ? 'Update' : 'Add' }} task</h2>
+<mat-dialog-content>
+  <form [formGroup]="form" class="form-wrapper">
+    <mat-form-field [floatLabel]="'auto'">
+      <mat-label>Task</mat-label>
+      <input
+        (keydown.enter)="submit()"
+        matInput
+        maxlength="55"
+        #titleRef
+        formControlName="title"
+        placeholder="please add a task name"
+      />
+      <mat-hint align="end">{{ titleFieldLength || 0 }} / 30</mat-hint>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-stroked-button mat-dialog-close>No</button>
+  <button
+    (click)="submit()"
+    mat-flat-button
+    color="primary"
+    [disabled]="task.title === titleRef.value || titleFieldLength < 3"
+  >
+    {{ isTask(task) ? 'Update' : 'Create' }}
+  </button>
+</mat-dialog-actions>

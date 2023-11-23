@@ -1,0 +1,45 @@
+.box {
+  padding: 0;
+  border-bottom: solid 1px #ccc !important;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  min-height: 68px;
+  flex-direction: row;
+  box-sizing: border-box;
+  cursor: move;
+  background: transparent;
+  font-size: 14px;
+  height: auto;
+}
+
+.isLast {
+  border: none !important;
+}
+
+.title {
+  flex: 1 1 auto;
+  padding-left: 8px;
+
+  .wait-sync {
+    font-size: 10px;
+    color: #efcf64;
+  }
+}
+
+button {
+  align-self: center;
+  margin-right: 6px;
+}
+
+.delete:hover {
+  color: #d32f2f;
+}
+
+.sync-delete {
+  cursor: no-drop;
+  background-color: #d32f2f;
+}
+
+.tooltip-uppercase {
+  text-transform: uppercase;
+}

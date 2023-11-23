@@ -1,0 +1,37 @@
+<div class="box" [class.isLast]="isLastItem()">
+  <div class="title">
+    <p>{{ task().title }}</p>
+    <div [hidden]="hideMessage()" class="wait-sync">Waiting for synchronisation.</div>
+  </div>
+  <button
+    mat-icon-button
+    [hidden]="syncAction().deleted"
+    (click)="editTask.emit(task())"
+    matTooltip="Edit"
+    matTooltipClass="tooltip-uppercase"
+    aria-label="edit btn"
+  >
+    <mat-icon class="edit">edit</mat-icon>
+  </button>
+  @if (syncAction().deleted) {
+    <button
+      mat-icon-button
+      (click)="undo(syncAction().deleted)"
+      matTooltip="undo delete"
+      matTooltipClass="tooltip-uppercase"
+      aria-label="undo delete btn"
+    >
+      <mat-icon class="">settings_backup_restore</mat-icon>
+    </button>
+  } @else {
+    <button
+      mat-icon-button
+      (click)="deleteTask.emit(task())"
+      matTooltip="delete"
+      matTooltipClass="tooltip-uppercase"
+      aria-label="delete btn"
+    >
+      <mat-icon class="delete">delete-outline</mat-icon>
+    </button>
+  }
+</div>

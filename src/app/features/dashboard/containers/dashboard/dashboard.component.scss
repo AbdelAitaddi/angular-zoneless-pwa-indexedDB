@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  //    background-color: #0c0c12;
+}
+
+.bar-chart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 400px;
+}

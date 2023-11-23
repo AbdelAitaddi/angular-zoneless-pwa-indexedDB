@@ -1,0 +1,15 @@
+<h1>Dashboard</h1>
+
+@defer (when viewModel().length > 0; prefetch on idle) {
+  <div class="bar-chart">
+    @for (vm of viewModel(); track vm.status) {
+      <app-dashboard-item [title]="vm.title" [status]="vm.status" [percentage]="vm.percentage" />
+    }
+  </div>
+} @placeholder {
+  <div class="loading-indicator">
+    <mat-spinner data-test-id="loading-indicator" mode="indeterminate" />
+  </div>
+} @error {
+  <p>Failed to load dashboard</p>
+}

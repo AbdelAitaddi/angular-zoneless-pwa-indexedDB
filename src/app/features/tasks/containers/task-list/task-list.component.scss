@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  height: 100%;
+}
+
+.add-task {
+  font-weight: bold;
+  align-self: flex-start;
+}

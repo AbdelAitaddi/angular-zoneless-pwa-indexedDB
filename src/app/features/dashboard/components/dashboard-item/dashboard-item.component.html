@@ -1,0 +1,8 @@
+<mat-card>
+  <div class="bar-item">
+    <div class="title">{{ title() }}</div>
+    <div [style.width.%]="percentage()" @taskProgressTrigger class="progress-bar {{ status() }}">
+      {{ percentage() }} %
+    </div>
+  </div>
+</mat-card>

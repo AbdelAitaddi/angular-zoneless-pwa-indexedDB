@@ -1,0 +1,71 @@
+{
+  "name": "angular-zoneless-pwa-indexeddb",
+  "description": "Todo App, a example Project utilizing Angular (Zoneless, Async Reactivity with Resources, and Signals). Includes Dexie.js (IndexedDB), PWA (Progressive Web App) and Background sync, utilizing Angular CLI 19",
+  "version": "1.0.0",
+  "author": "AbdelAitaddi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbdelAitaddi/angular-zoneless-pwa-indexeddb/issues"
+  },
+  "homepage": "https://github.com/AbdelAitaddi/angular-zoneless-pwa-indexeddb",
+  "keywords": [
+    "angular-19",
+    "zoneless",
+    "signals",
+    "standalone",
+    "indexedDB",
+    "angular-architecture",
+    "dexie.js",
+    "background-sync",
+    "offline-first",
+    "pwa"
+  ],
+  "private": true,
+  "engines": {
+    "node": "^22.13.0",
+    "npm": "^10.9.1"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng dev",
+    "start:eslint": "ng dev --force-esbuild",
+    "build": "ng build --configuration=production",
+    "watch": "ng build --watch --configuration development",
+    "db": "json-server --watch db.json",
+    "start-server": "angular-http-server --cors --path ./dist/angular-zoneless-pwa-indexeddb/browser -p 8080",
+    "format:fix": "pretty-quick --verbose",
+    "lint": "ng lint"
+  },
+  "dependencies": {
+    "@angular/animations": "~19.2.0",
+    "@angular/cdk": "~19.2.1",
+    "@angular/common": "~19.2.0",
+    "@angular/compiler": "~19.2.0",
+    "@angular/core": "~19.2.0",
+    "@angular/forms": "~19.2.0",
+    "@angular/material": "~19.2.1",
+    "@angular/platform-browser": "~19.2.0",
+    "@angular/platform-browser-dynamic": "~19.2.0",
+    "@angular/router": "~19.2.0",
+    "@angular/service-worker": "~19.2.0",
+    "dexie": "~4.0.11",
+    "normalize.css": "~8.0.1",
+    "rxjs": "~7.8.2",
+    "tslib": "~2.8.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~19.2.0",
+    "@angular/cli": "~19.2.0",
+    "@angular/compiler-cli": "~19.2.0",
+    "@eslint/js": "~9.21.0",
+    "angular-eslint": "19.1.0",
+    "angular-http-server": "~1.12.0",
+    "eslint": "~9.21.0",
+    "json-server": "~1.0.0-beta.3",
+    "prettier": "3.5.2",
+    "pretty-quick": "4.0.0",
+    "ts-node": "~10.9.2",
+    "typescript": "~5.7.3",
+    "typescript-eslint": "8.25.0"
+  }
+}

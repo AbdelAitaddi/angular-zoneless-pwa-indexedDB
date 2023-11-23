@@ -1,0 +1,36 @@
+<div class="content" cdkDropListGroup>
+  @for (collection of tasksByStatus(); track collection.status) {
+    <div class="container {{ collection.status }}-container">
+      <div @taskHeadlineTrigger class="heading mat-elevation-z4 {{ collection.status }}">
+        {{ collection.title }}
+      </div>
+      <div
+        cdkDropList
+        class="list"
+        [id]="collection.status"
+        [@taskInOutTrigger]="tasksByStatus()"
+        [cdkDropListData]="collection.tasks"
+        (cdkDropListDropped)="move($event)"
+      >
+        @for (item of collection.tasks; track item.id; let last = $last) {
+          @let syncAction = getSyncActionsByTaskId(item.id);
+          <div
+            cdkDrag
+            [cdkDragData]="item"
+            [cdkDragDisabled]="syncAction.deleted"
+            [class.sync-delete]="syncAction.deleted"
+          >
+            <app-task-item
+              [task]="item"
+              [isLastItem]="last"
+              [syncAction]="syncAction"
+              (editTask)="editTask.emit($event)"
+              (deleteTask)="deleteTask.emit($event)"
+              (undoDeleteTask)="undoDeleteTask.emit($event)"
+            />
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

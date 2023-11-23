@@ -1,0 +1,94 @@
+body {
+  background: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+}
+
+.mdc-text-field,
+mat-form-field {
+  width: 100%;
+}
+
+/* Angular adds grey background on mat form components */
+/* below removes that background color */
+/* Manipulate initial background color*/
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: transparent !important;
+}
+
+/*Manipulate background color on hover and focus*/
+.mat-mdc-form-field-focus-overlay {
+  background-color: transparent !important;
+}
+
+.no-reserved-space {
+  .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+  }
+}
+
+// sidenav- ////////////////
+
+.mat-sidenav-container {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+}
+
+.mat-mdc-nav-list {
+  padding: 8px !important;
+}
+
+.mat-sidenav-content {
+  // height: calc(100vh - 64px) !important;
+  height: 100%;
+}
+
+.mat-sidenav {
+  width: 250px !important;
+}
+
+mat-sidenav mat-icon {
+  margin-right: 12px;
+}
+
+// snackbar ////////////////
+
+.warn {
+  .mat-mdc-snackbar-surface {
+    background: #fdd835 !important;
+    color: #000000 !important;
+    button {
+      color: #000000 !important;
+    }
+  }
+}
+
+.info {
+  .mat-mdc-snackbar-surface {
+    background: #0277bd !important;
+    color: #ffffff;
+    button {
+      color: #000000 !important;
+    }
+  }
+}
+
+.success {
+  .mat-mdc-snackbar-surface {
+    background: #4caf50 !important;
+    color: #ffffff;
+    button {
+      color: #000000 !important;
+    }
+  }
+}
+
+.error {
+  .mat-mdc-snackbar-surface {
+    background: #d32f2f !important;
+    color: #ffffff;
+    button {
+      color: #000000 !important;
+    }
+  }
+}

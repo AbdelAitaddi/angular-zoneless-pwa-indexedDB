@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>Delete file</h2>
+<mat-dialog-content>
+  Would you like to delete <span class="task-title">{{ task.title }}</span> ?<br />
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-stroked-button (click)="onNoClick()">No</button>
+  <button mat-stroked-button class="delete" [mat-dialog-close]="task" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>

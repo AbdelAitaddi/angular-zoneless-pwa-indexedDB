@@ -1,0 +1,26 @@
+@use "../../../../../styles/mixins/layout";
+
+h2,
+mat-dialog-content {
+  @include layout.flex();
+  padding-top: 8px;
+}
+
+.form-wrapper {
+  width: 100%;
+  @include layout.flex(row);
+}
+
+mat-form-field + button {
+  margin-left: 24px;
+}
+
+@media (max-width: 576px) {
+  .form-wrapper {
+    flex-direction: column;
+  }
+
+  mat-form-field + button {
+    margin-left: 0;
+  }
+}
